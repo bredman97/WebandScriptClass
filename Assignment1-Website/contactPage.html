@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Brandon's Website</title>
+        <link rel= "stylesheet" type="text/css" href="style.css" media="only screen and (min-width: 960px)">
+        <link rel= "stylesheet" type="text/css" href="tablet.css" media="only screen and (min-width: 481px) and (max-width: 959px)">
+        <link rel= "stylesheet" type="text/css" href="mobile.css" media="only screen and (max-width: 480px)">
+    </head>
+    <body>
+        <div id="wrapper">
+        <header>
+            <h1>WELCOME TO MY CONTACT PAGE!</h1>
+            <nav>
+                <h4>
+                <a href="homePage.html">Home</a>
+                <a href="aboutPage.html">About</a>
+                <a href="projectPage.html">Project</a>
+                <a href="contactPage.html">Contact</a>
+                </h4>
+            </nav>
+        </header>
+
+        <section id="Contact">
+
+            <h1>Stay in Touch!</h1> 
+            <form action="mailto:bredman1@ontariotechu.net" ?subject="SignUp" enctype="text/plain" method="post" name="Form">
+            <p>
+                <label for="name">Name : </label>
+                <input type="text" name="name" size="36" placeholder="Please Enter Your Name Here" required>
+            </p>
+            <p>
+                <label for="email">Email : </label>
+                <input type="email" name="email" size="30" placeholder="Please Enter Your Email Here" required>
+            </p>
+            <p>
+                <label for="feedback">Comments : </label><br>
+                <textarea name="feedback" cols="60" rows="8"></textarea>
+            </p>
+
+            <p> 
+                <label for="where">How did you find us?</label> 
+                <select name="where"> 
+                    <option value="Class">Class</option> 
+                    <option value="Word of mouth">Word of mouth</option> 
+                    <option value="Other">Other</option> 
+                </select> 
+            </p>
+            
+                <br>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </form>
+
+
+        </section>
+
+
+
+
+
+
+        <div class="clear"></div>
+
+        <footer>
+            &copy; Copyright 2023 Brandon Redman
+            <address>
+                <p>Contact me at <a href="mailto:bredman1@ontariotechu.net">bredman1@ontariotechu.net</a></p>
+
+            </address>
+            <nav>
+                <h5>
+                <a href="homePage.html">Home</a>
+                <a href="aboutPage.html">About</a>
+                <a href="projectPage.html">Project</a>
+                <a href="contactPage.html">Contact</a>
+                </h5>
+            </nav>
+
+        </footer>
+
+        </div>
+    </body>
+</html>

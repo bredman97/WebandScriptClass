@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Brandon's Website</title>
-        <link rel= "stylesheet" type="text/css" href="style.css">
+        <link rel= "stylesheet" type="text/css" href="style.css" media="only screen and (min-width: 960px)">
+        <link rel= "stylesheet" type="text/css" href="tablet.css" media="only screen and (min-width: 481px) and (max-width: 959px)">
+        <link rel= "stylesheet" type="text/css" href="mobile.css" media="only screen and (max-width: 480px)">
     </head>
     <body>
         <div id="wrapper">
@@ -24,10 +26,24 @@
                 year and hope to work in cybersecurity after University. I like football,
                 music and coding!
             </P>
-            <img src="MyPhoto.JPEG" alt="Photo of Me">
-            <video width="320" height="240" controls poster="posterimg.jpg">
-            <source src="MyIntroVid.mp4" type="video/mp4">
-            </video>
+            
+            
+            <div id="left-column">
+                <img src="MyPhoto.JPEG" alt="Photo of Me">
+
+            </div>
+            <div id="right-column">
+                <video width="420" height="320" controls poster="posterimg.jpg">
+                    <source src="MyIntroVid.mp4" type="video/mp4">
+                    </video>
+            </div>
+    
+    
+    
+    
+    
+    
+    
             
 
         </section>
@@ -38,8 +54,13 @@
 
 
 
-
+        <div class="clear"></div>
         <footer>
+            &copy; Copyright 2023 Brandon Redman
+            <address>
+                <p>Contact me at <a href="mailto:bredman1@ontariotechu.net">bredman1@ontariotechu.net</a></p>
+
+            </address>
             <nav>
                 <h5>
                 <a href="homePage.html">Home</a>
