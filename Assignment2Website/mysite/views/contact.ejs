@@ -1,0 +1,47 @@
+<% include partials/header.ejs %>
+<% include partials/topnavbar.ejs %>
+
+<div id="wrapper">
+    <section id="Contact">
+
+            <h1>Stay in Touch!</h1> 
+            <form action="mailto:bredman1@ontariotechu.net" ?subject="SignUp" enctype="text/plain" method="post" name="Form">
+            <p>
+                <label for="name">Name : </label>
+                <input type="text" name="name" size="36" placeholder="Please Enter Your Name Here" required>
+            </p>
+            <p>
+                <label for="email">Email : </label>
+                <input type="email" name="email" size="30" placeholder="Please Enter Your Email Here" required>
+            </p>
+            <p>
+                <label for="feedback">Comments : </label><br>
+                <textarea name="feedback" cols="60" rows="8"></textarea>
+            </p>
+
+            <p> 
+                <label for="where">How did you find us?</label> 
+                <select name="where"> 
+                    <option value="Class">Class</option> 
+                    <option value="Word of mouth">Word of mouth</option> 
+                    <option value="Other">Other</option> 
+                </select> 
+            </p>
+            
+                <br>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </form>
+
+
+        </section>
+</div>
+
+
+
+
+
+
+
+<% include partials/bottomnavbar.ejs %>
+<% include partials/footer.ejs %>
