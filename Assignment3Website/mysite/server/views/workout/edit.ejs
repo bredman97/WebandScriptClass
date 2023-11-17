@@ -1,0 +1,79 @@
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/topnavbar.ejs %>
+
+<!-- Content for the Add page -->
+<div class="wrapper">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="nameTextField">Workout Name</label>
+                    <input type="text" class="form-control"
+                    id="nameTextField"
+                    placeholder="Enter The Workout"
+                    name= "Name"
+                    value="<%= Workout.Name %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="muscleTextField">Muscle</label>
+                    <input type="text" class="form-control"
+                    id="muscleTextField"
+                    placeholder="Enter The Muscle Group"
+                    name= "Muscle"
+                    value="<%= Workout.Muscle %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="setsTextField">Sets</label>
+                    <input type="text" class="form-control"
+                    id="setsTextField"
+                    placeholder="Enter The Number of Sets"
+                    name="Sets" 
+                    value="<%= Workout.Sets %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="repsTextArea">Reps</label>
+                    <textarea type="text" class="form-control"
+                    id="repsTextArea"
+                    placeholder="Enter The Number of Reps"
+                    name="Reps" 
+                    value = "<%= Workout.Reps %>"
+                    required>
+                    
+                    </textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="dayTextField">Day</label>
+                    <input type="text" class="form-control"
+                    id="dayTextField"
+                    placeholder="Enter The Day to Workout"
+                    name="Day" 
+                    value="<%= Workout.Day %>"
+                    required>
+                </div>
+
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit</button>
+                
+                    <a href="/workoutplan" class="btn btn-warning">
+                        <i class="fas fa-undo"></i> Cancel</a>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+<%- include ../partials/bottomnavbar.ejs %>  
+
+<%- include ../partials/footer.ejs %>
