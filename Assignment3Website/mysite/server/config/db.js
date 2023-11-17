@@ -1,4 +1,5 @@
 module.exports =
 {
-    "URI": "mongodb://127.0.0.1:27017/WorkoutPlan"
+    "URI":"mongodb+srv://adminBran:<WebandScript!>@brancluster.vxitwj3.mongodb.net/?retryWrites=true&w=majority";
+
 }
